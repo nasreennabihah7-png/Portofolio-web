@@ -1,0 +1,267 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Kopi</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+            background: #fff5f7;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: pink;
+            padding: 15px 40px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img{
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .logo h2{
+            color: lightcoral;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li{
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: lightgreen;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 160px;
+            top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a{
+            display: block;
+            color: lightcoral;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover{
+            background: pink;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px;
+        }
+
+        .hero-text{
+            width: 50%;
+        }
+
+        .hero-text h1{
+            font-size: 60px;
+            color: lightcoral;
+        }
+
+        .hero-text p{
+            font-size: 20px;
+            color: #555;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: lightcoral;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+
+        .btn:hover{
+            background: hotpink;
+        }
+
+        .hero-image{
+            width: 45%;
+            text-align: center;
+        }
+
+        .hero-image img{
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        .product{
+            padding: 60px;
+            text-align: center;
+        }
+
+        .product h2{
+            color: lightcoral;
+            font-size: 40px;
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card{
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .card img{
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .card h3{
+            color: lightcoral;
+        }
+
+        footer{
+            background: pink;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://i.pinimg.com/1200x/3a/3b/24/3a3b24e22fb88e1de3f348369d4efac7.jpg">
+            <h2>Kopi.Web</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Product</a>
+
+                <div class="dropdown-content">
+                    <a href="#">Espresso</a>
+                    <a href="#">Latte</a>
+                    <a href="#">Cappuccino</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Service</a>
+
+                <div class="dropdown-content">
+                    <a href="#">Order Online</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Membership</a>
+                </div>
+            </li>
+
+            <li><a href="#">About</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Website Kopi Terbaik ☕</h1>
+
+            <p>
+                Nikmati kopi premium dengan rasa terbaik setiap hari.
+                Temukan berbagai pilihan kopi favoritmu hanya di Kopi.Web.
+            </p>
+
+            <a href="#" class="btn">Order Sekarang</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/0e/b0/5e/0eb05ec4d233f4dac8e5cb1bc187e22d.jpg">
+        </div>
+
+    </section>
+
+    <section class="product">
+
+        <h2>Menu Favorit</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+                <h3>Espresso</h3>
+                <p>Rp 20.000</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+                <h3>Latte</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+                <h3>Cappuccino</h3>
+                <p>Rp 28.000</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Kopi.web</p>
+    </footer>
+
+</body>
+</html>
